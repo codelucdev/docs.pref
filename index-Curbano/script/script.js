@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <p>___________________________________________</p><br>
                 <strong style="text-align:center;">${responsavel}</strong><br><br>
                 <strong style="text-align:center;">
-                    ${ responsavel === 'Lucas Renan Santana Barbosa' ? 'FISCAL DE POSTURAS' : (responsavel === 'Alisson Gusmão' ? 'CHEFE DO DEPARTAMENTO DE OBRAS' : 'SECRETÁRIO DE INFRAESTRUTURA')}
+                    ${ responsavel === 'LUCAS RENAN SANTANA BARBOSA' ? 'FISCAL DE POSTURAS' : (responsavel === 'ALISSON GUSMÃO CORDEIRO' ? 'CHEFE DO DEPARTAMENTO DE OBRAS' : 'SECRETÁRIO DE INFRAESTRUTURA')}
                 </strong>
             </div>
         </div>
