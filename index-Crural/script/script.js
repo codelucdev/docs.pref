@@ -1,4 +1,5 @@
 document.getElementById('gerarPDF').addEventListener('click', function() {
+
     var responsavel = document.getElementById('responsavel').value;
     var documento = document.getElementById('documento').value;
     var cpf_cnpj = document.getElementById('cpf_cnpj').value.toUpperCase();
@@ -22,7 +23,7 @@ document.getElementById('gerarPDF').addEventListener('click', function() {
     document.getElementById('error-message').textContent = '';
 
     // Nome do arquivo
-    var nomeArquivo = 'REQUERIMENTO_CEMIG_RURAL_' + proprietario.replace(/\s+/g, '_') + '_NUMERO-CONTROLE' + numero_controle + '.pdf';
+    var nomeArquivo = 'REQUERIMENTO_CEMIG_RURAL_' + proprietario.replace(/\s+/g, '_') + '_NUMERO-CONTROLE_' + numero_controle + '.pdf';
 
     // Definindo o cargo do responsável
     var cargo;
@@ -51,8 +52,9 @@ document.getElementById('gerarPDF').addEventListener('click', function() {
         <div class="container">
             <h1 style="color: black; text-align: center; text-decoration:underline; font-size:25px; margin: 120px; ">DECLARAÇÃO DE NÃO IMPEDIMENTO RURAL</h1>
             <div class="pdf-content">
-                <p style="text-align:justify; margin:50px;">A PREFEITURA DE SÃO JOÃO DA PONTE, sediada na PRAÇA OLÍMPIO CAMPOS, Nº 128, CENTRO, nesta cidade de SÃO JOÃO DA PONTE, ora representada pelo Sr. ${responsavel}, Declara que NÃO HÁ IMPEDIMENTOS PARA LIGAÇÃO de ENERGIA ELÉTRICA em uma ÁREA RURAL com área de aproximadamente ${area} ${unidade}, situado em um lugar denominado ${localizacao}, situada na região de ${regiao}, neste município, de responsabilidade ${responsavel}, inscrito no ${documento.toUpperCase()}: ${cpf_cnpj.toUpperCase()}, SN, neste município de São João da Ponte - MG.</p>
+                <p style="text-align:justify; margin:50px;">A PREFEITURA DE SÃO JOÃO DA PONTE, sediada na PRAÇA OLÍMPIO CAMPOS, Nº 128, CENTRO, nesta cidade de SÃO JOÃO DA PONTE, ora representada pelo Sr. ${responsavel}, Declara que NÃO HÁ IMPEDIMENTOS PARA LIGAÇÃO de ENERGIA ELÉTRICA em uma ÁREA RURAL com área de aproximadamente ${area} ${unidade}, situado em um lugar denominado ${localizacao}, situada na região de ${regiao}, neste município, de responsabilidade de ${proprietario}, inscrito no ${documento.toUpperCase()}: ${cpf_cnpj.toUpperCase()}, SN, neste município de São João da Ponte - MG.</p>
                 <p style="text-align:justify; margin-left:50px;">Número de Controle: ${numero_controle}</p>
+                <p style="margin-left:50px">Área do Terreno: ${area}${unidade}</p>
                 <p style="text-align:justify; margin-left:50px;">São João da Ponte – MG, ${data}.</p>
             </div>
             
