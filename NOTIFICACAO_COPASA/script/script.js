@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             <p style="padding-bottom: 30px";><strong>Data de vencimento:</strong> ${new Date(new Date().getTime() + (prazoDias * 24 * 60 * 60 * 1000)).toLocaleDateString()}</p>
                     </section>
 
-                    <footer style="display:flex; justify-content: center; align-items: center; flex-direction: column; heigh: 100%; width: 100%; padding-bottom:300px;" >
+                    <footer style="display:flex; justify-content: center; align-items: center; flex-direction: column; heigh: 100%; width: 100%; padding-bottom:260px;" >
                         
                         <p>_________________________________</p><br>
                         <p style="text-align:center;><strong">${responsavel}</strong></p><br><br>
