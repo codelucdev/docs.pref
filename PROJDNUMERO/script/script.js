@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 inscrita no CNPJ sob o número <strong>16.928.483/0001-29</strong>
                 e sediada NA PRAÇA OLÍMPIO CAMPOS, N° 128, CENTRO, SÃO JOÃO DA PONTE,
                 vem, por meio deste  fornecer o número <strong>${numero}</strong> sob o endereço localizado na <strong>
-                RUA ${endereco}, BAIRRO ${comunidade}</strong>, neste município, sob responsabilidade de
+                 ${endereco}, BAIRRO ${comunidade}</strong>, neste município, sob responsabilidade de
                 <strong>${proprietario}</strong>, ${cpfCnpjLabel} <strong>${cpfCnpj}</strong>,
                 PERIMETRO URBANO, NESTA CIDADE DE SÃO JOÃO DA PONTE – MG.
             <p><br>
