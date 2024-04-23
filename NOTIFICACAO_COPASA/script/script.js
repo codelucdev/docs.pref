@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                         <p><strong style="text-align:center;">${responsavel === 'LUCAS RENAN SANTANA BARBOSA' ? 'FISCAL DE POSTURAS' : (responsavel === 'ALISSON GUSMÃO CORDEIRO' ? 'CHEFE DO DEPARTAMENTO DE OBRAS' : 'SECRETÁRIO DE INFRAESTRUTURA')}</strong></p>
                             
-                        <p style= "text-align: center; padding-top: 40px;">Assinatura:________________________________  Data de recebimento: ____/____/____</p>
+                        <p style= "text-align: center; padding-top: 18px;">Assinatura________________________________ Data de recebimento____/____/____</p>
 
                     </footer>
 
